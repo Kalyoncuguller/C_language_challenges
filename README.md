@@ -1,18 +1,15 @@
-Merhaba! 
+Merhaba!
 
-Hereks birbirinden farklı code yollamli. 
+Hereks birbirinden farklı kod yollamalı.
 
-10, 20 kere yazdıginiz kodu 20 kere yollamak yerine bir kere. 
+yazdıginiz kodu 20 kere yollamak yerine bir kere gonderin. 
 
-Yetmiyor mailbox doldu.
+Yetmiyor posta kutusu doldu.
 
 Boyle challenge olmaz.
 
-Sadece bir kere iki kisi yazar codu iyi olan alir. 
 
-Bir kere yollamak yollayin
-
-please do not send your code multiple times. 
+Please do not send your code multiple times. 
 
 My mailbox is full. 
 
