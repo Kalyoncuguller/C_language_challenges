@@ -1,25 +1,35 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main(){
-    int a, b, temp;
-    printf("a ve b sayılarını gir \n");
-    scanf("%d%d", &a, &b);
-
-    printf("swap öncesi\nilk sayi = %d\nikinci sayı = %d\n", a, b);
-
-    temp = a;
-    a = b;
-    b = temp;
-
-    printf("swap sonrası\nilk sayi = %d\nikinci sayı  = %d\n", a, b);
-
+void swap(int *,int *);
+int main()
+{
+    int num1,num2;
+    int *ptr,*ptr2;
+    printf("Enter a num1:");
+    scanf("%d",&num1);
+    
+    printf("Enter a num2:");
+    scanf("%d",&num2);
+    
+    ptr=&num1;
+    ptr2=&num2;
+    
+    swap(ptr,ptr2);
+   
     return 0;
 }
+void swap(int *ptr,int *ptr2){
+     int temp;
+     temp=*ptr;
+     *ptr=*ptr2;
+     *ptr2=temp;
+     
+     printf("num1=%d and num2=%d\n",*ptr,*ptr2);
+     
+    
+}
 
-// output:
-// swap öncesi
-// ilk sayi = 1
-// ikinci sayı = 2
-// swap sonrası
-// ilk sayi = 2
-// ikinci sayı  = 1
+//output:
+//Enter a num1:23
+//Enter a num2:45
+//num1=45 and num2=23
