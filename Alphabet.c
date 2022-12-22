@@ -1,10 +1,15 @@
 #include <stdio.h>
-int main()
-{
-   char a;
-   for (a = 'a'; a <= 'z'; a++)
-   {
-      printf("%c\t", a);
-   }
-   return 0;
-}   
+
+int main(){
+  char *ptr, i;
+
+  ptr = &i;
+
+  printf("Letters:\n");
+  
+  for (i='A'; i<='Z'; i++) 
+  printf("%c ", *ptr);
+
+  return 0;
+}
+
