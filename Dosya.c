@@ -1,17 +1,14 @@
 #include <stdio.h>
 int main(){
-    FILE *dosya =fopen("dosya.txt","a");
-    int sayi;
-    printf("bir sayi giriniz");
-    scanf("%d",&sayi);
-    if(sayi < 100){
-        fprintf(dosya,"%d\n",sayi);
-        fclose(dosya);
-        FILE *dosya=fopen("dosya.txt","r");
-        while(fscanf(dosya,"%d",&sayi) != EOF)
-            printf("%d\n",sayi);
+    FILE *dosya =fopen("dosya.txt","w+");
+    if(dosya==NULL) {
+        printf("Dosya acilamadi");
     }
-    else{
-        printf("100 den küçük sayi giriniz");
+    else {
+        printf("Dosya acildi");
+        
     }
+    fclose(dosya);
+    return 0;
 }
+
