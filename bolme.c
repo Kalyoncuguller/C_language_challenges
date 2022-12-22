@@ -1,9 +1,20 @@
 #include <stdio.h>
-int main()
-{
-  float n1, n2, bol;
-  printf("Enter two numbers:");
-  scanf("%f%f", &n1, &n2);
-  div = n1 / n2;
-  printf(" Divide =%.3f", bol);
+
+int main() {
+    int num1,num2;
+    float division,remainder;
+    
+    printf("Enter first number:");
+    scanf("%d", &num1);
+    
+    printf("Enter second number:");
+    scanf("%d", &num2);
+ 
+    division = num1 / num2;
+    remainder = num1 % num2;
+ 
+    printf("%d of %d division result = %.2f\n",num1,num2,division);
+    printf("%d of %d remainder result = %.2f",num1,num2,remainder);
+    
+    return 0;
 }
