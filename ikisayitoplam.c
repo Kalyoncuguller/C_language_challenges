@@ -1,14 +1,22 @@
-
 #include <stdio.h>
-int main() 
+int main()
 {
-  int a, b;
-
-  printf("Enter first number:\n");
-  scanf("%d", &a);
-  printf("Enter second number:\n");
-  scanf("%d", &b);
-
-  printf("Addition of two numbers = %d", a + b);
-  return 0;
-}
+   int num1,num2,sum;
+   int *ptr, *pt;
+   
+   printf("Enter first number:");
+   scanf("%d", &num1);
+   
+   printf("Enter second number:");
+   scanf("%d", &num2);   
+ 
+   ptr = &num1;
+   pt = &num2;
+ 
+   sum = *ptr + *pt;
+ 
+   printf("Sum of entered numbers: %d",sum);
+ 
+   return 0;
+   
+   }
