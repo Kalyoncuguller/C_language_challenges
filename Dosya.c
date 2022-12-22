@@ -1,14 +1,21 @@
 #include <stdio.h>
-int main(){
-    FILE *dosya =fopen("dosya.txt","w+");
-    if(dosya==NULL) {
-        printf("Dosya acilamadi");
+#include <stdlib.h>
+
+int main() {
+    char sentence[600];
+
+    FILE *fgk;
+
+    fgk = fopen("dosya.txt", "w");
+
+    if (fgk == NULL) {
+        printf("The file could not be opened!");
+        exit(1);
     }
-    else {
-        printf("Dosya acildi");
-        
-    }
-    fclose(dosya);
+    printf("Enter a sentence:");
+    fgets(sentence, sizeof(sentence), stdin);
+    fprintf(fgk, "%s", sentence);
+    fclose(fgk);
     return 0;
 }
 
