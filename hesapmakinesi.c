@@ -1,33 +1,37 @@
-
 #include <stdio.h>
+#include <conio.h>
+int main(){
 
-int main() {
-
-    char op;
-    double first, second;
-    printf("işlem seçin  (+, -, *, /): ");
-    scanf("%c", &op);
-    printf("iki sayı girin: ");
-    scanf("%lf %lf", &first, &second);
+	int num1,num2;
+	float result;
+	char op;
+	printf("Choose an operator(+ - / *):");
+	scanf("%c",&op);
+	
+	printf("Enter first number:");
+    scanf("%d",&num1);
     
-    switch (op) {
-        case '+':
-            printf("%.1lf + %.1lf = %.1lf", first, second, first + second);
-            break;
-        case '-':
-            printf("%.1lf - %.1lf = %.1lf", first, second, first - second);
-            break;
-        case '*':
-            printf("%.1lf * %.1lf = %.1lf", first, second, first * second);
-            break;
-        case '/':
-            printf("%.1lf / %.1lf = %.1lf", first, second, first / second);
-            break;
-        // operator doesn't match any case constant (+, -, *, /)
-        default:
-            printf("Operator hatası");
+    printf("Enter second number:");
+	scanf("%d",&num2);
+	
+	if(op=='+'){
+		result = num1 + num2;
+		printf("Result = %.2f",result);
+	}
+	else if(op=='-'){
+		result = num1 - num2;
+		printf("Result = %.2f",result);
+	}
+	else if(op=='*'){
+		result = num1 * num2;
+		printf("Result = %.2f",result);
+	}
+	else if(op=='/'){
+		result = num1 / num2;
+		printf("Result = %.2f",result);
+	}
+    else{
+        printf("You entered the wrong operator!");
     }
-    
-    return 0;
+	return 0;
 }
-
